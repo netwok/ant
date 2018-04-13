@@ -10,5 +10,5 @@ def pgnfix(text, src='ICC'):
             res[-1][i] = res[-1][i].replace('</td></tr>','')
         return res
     else:
-        print('Please specify a valid source from one of the following abbreviations:', *sites, sep='\n')
+        print('Please specify a valid source from one of the following abbreviations:', **sites, sep='\n')
 pgnfix(text, 'LIC')
