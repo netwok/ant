@@ -21,4 +21,8 @@ def floo(pas,chas,ans):
         ans.append(chas-aim)
         print('aim: ',aim)
         ans.append(int(aim/5))
+        try:
+            ans.remove(0)
+        except ValueError:
+            pass  # do nothing!
         return ans
