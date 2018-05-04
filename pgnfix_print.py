@@ -4,4 +4,4 @@ def pgnfix_print(text, src='ICC'):
     list1 = text.replace('</td></tr><tr><td>',' ').replace('</td><td class="fbshare-notation">',' ').replace('</td></tr>','').replace('<tr><td>','')
     print(list1)
   else:
-    print('Please specify a valid source from one of the following abbreviations:', **sites, sep='\n')
+    print('Please specify a valid source from one of the following abbreviations:', **sites, sep='\n') 
